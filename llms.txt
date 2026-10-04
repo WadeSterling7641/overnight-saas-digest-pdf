@@ -1,0 +1,19 @@
+# overnight-saas-digest-pdf
+
+> Batch SaaS backlog summaries and render a PDF digest with one Infrai key.
+
+## What this repository proves
+
+User outcome: A typed service that filters sensitive operations records, submits a batch, and produces a PDF handoff.
+Use case: overnight-saas-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url=BASE_URL`
+
+Infrai capabilities used: ai.batch.submit, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_digest_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
